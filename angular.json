@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Teaching"
+    }
+  },
+  "defaultProject": "Teaching",
+  "cli": {
+    "analytics": "f7a55b29-f1e2-409b-b2b4-4af383e1501a"
+  }
 }

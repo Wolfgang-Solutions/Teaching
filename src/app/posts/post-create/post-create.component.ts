@@ -4,10 +4,11 @@ import { Component } from '@angular/core';
     selector: 'app-post-create',
     templateUrl: './post-create.component.html'
 })
-export class PostCreateComponent {
+export class PostCreateComponent
+ {
     enteredValue = '';
     NewPost = 'NO CONTENT';
-    onAddPost() {
+    onAddPost(){
         // console.log(postInput);
         alert('Post Added');
         // this.NewPost = 'User\'s post';

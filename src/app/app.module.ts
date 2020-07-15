@@ -1,7 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { MatInputModule, MatCardModule, MatButtonModule } from '@angular/material/input';
+import { MatInputModule } from '@angular/material/input';
+import {
+  MatButtonModule,
+  MatMenuModule,
+  MatToolbarModule,
+  MatIconModule,
+  MatCardModule
+} from '@angular/material/';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -22,6 +29,9 @@ import { from } from 'rxjs';
     BrowserAnimationsModule,
     MatInputModule,
     MatButtonModule,
+    MatMenuModule,
+    MatToolbarModule,
+    MatIconModule,
     MatCardModule
   ],
   providers: [],

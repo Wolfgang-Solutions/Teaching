@@ -9,11 +9,11 @@
   
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/pricing" routerLinkActive="active"><strong>Pricings</strong></a>
+        <li class="nav-item" data-toggle="collapse">
+          <a class="nav-link" href="/pricing"><strong>Pricings</strong></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/download" routerLinkActive="active"><strong>Downloads</strong></a>
+        <li class="nav-item" data-toggle="collapse">
+          <a class="nav-link" href="/download"><strong>Downloads</strong></a>
         </li>
       </ul>
       <button class="btn btn-success">
@@ -21,3 +21,9 @@
       </button>
     </div>
   </nav>
+
+  <script>
+      $('.navbar-nav>li>a').on('click', function(){
+            $('.navbar-collapse').collapse('hide');
+        });
+  </script>

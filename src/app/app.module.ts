@@ -7,13 +7,15 @@ import { HeaderComponent } from './header/header.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { DownloadComponent } from './download/download.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     PricingComponent,
-    DownloadComponent
+    DownloadComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

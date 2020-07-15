@@ -4,7 +4,7 @@ import {PricingComponent} from './pricing/pricing.component';
 import {DownloadComponent} from './download/download.component';
 
 
-const routes: Routes = [
+const routes: Routes = [ 
   { path: 'pricing' , component: PricingComponent },
   { path: 'download' , component: DownloadComponent }
 ];

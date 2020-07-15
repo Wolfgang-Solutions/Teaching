@@ -11,10 +11,12 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-    countClick() {
-      this.clickCounter += 1;
-    }
-  }
+  ngOnInit() { }
 
+  countClick() {
+    this.clickCounter += 1;
+  }
+    
 }
+
+

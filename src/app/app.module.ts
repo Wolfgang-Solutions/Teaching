@@ -8,7 +8,7 @@ import {
   MatToolbarModule,
   MatIconModule,
   MatCardModule
-} from '@angular/material/'; // NEED HELP!
+} from '@angular/material'; // NEED HELP!
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';

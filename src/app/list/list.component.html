@@ -1,1 +1,9 @@
-<p>list works!</p>
+<h1> Subjects </h1>
+ 
+<ul *ngIf="sub">
+    <li *ngFor="let subject of sub">
+        <p class="name"> {{ subject.name }} </p>
+        <p class="country"> {{ subject.country }} </p>
+        <a href="{{ subject.website_url }}" class="site" > Bio </a>
+    </li>
+</ul>

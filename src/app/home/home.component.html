@@ -12,3 +12,17 @@
         <strong>You said:</strong> {{ name }} 
     </p>
 </div>
+
+<!--<div class="play-container" [style.background-color]="clickCounter > 4 ? 'cyan' : 'lightgrey'">-->
+ <div class="play-container" [class.active]="clickCounter > 4">   
+     <!--[ngStyle]="{
+     'background-color':  clickCounter < 4 ? 'cyan' : 'lightgrey',
+     'border': clickCounter > 4 ? '4px solid black' : 'none' }" -->
+        <ng-template [ngIf]="clickCounter > 4" [ngIfElse] = "none"></ng-template>
+            <p>The video has been played  <strong>Greater</strong> than 4 times. </p>
+        <ng-template #none>
+            <p> the video has been played <strong> less </strong> than 4 times. </p>
+        </ng-template>
+    
+</div>
+

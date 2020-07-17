@@ -1,0 +1,14 @@
+<div class="container mt-5 mb-5">
+    
+    <ul *ngIf="sub">
+        <div *ngFor="let subject of sub" class="col-12 col-sm-4 col-md-3">
+            <li>
+                <p class="name"> {{ subject.name }} </p>
+                <p class="country"> {{ subject.country }} </p>
+                <a target="_blank" href="{{ subject.website_url }}" class="site" > Bio </a>
+            </li>   
+        </div>
+    </ul>
+
+</div>
+

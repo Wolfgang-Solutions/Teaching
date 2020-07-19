@@ -19,6 +19,7 @@
     "@angular/platform-browser": "~10.0.3",
     "@angular/platform-browser-dynamic": "~10.0.3",
     "@angular/router": "~10.0.3",
+    "express": "^4.17.1",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
@@ -42,5 +43,22 @@
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~3.9.5"
-  }
+  },
+  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.2.",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wolfgang-Solutions/Teaching.git"
+  },
+  "keywords": [
+    "angular",
+    "js",
+    "mean stack"
+  ],
+  "author": "Derek Hoogewerf <dbhoogewerf@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wolfgang-Solutions/Teaching/issues"
+  },
+  "homepage": "https://github.com/Wolfgang-Solutions/Teaching#readme"
 }

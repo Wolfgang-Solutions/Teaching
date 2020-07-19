@@ -4,11 +4,17 @@ var router = express.Router();
 var { Student } = require('../models/student');
 const { json } = require('body-parser');
 const e = require('express');
+const { isValidObjectId } = require('mongoose');
 router.get('/', (req, res)=>{
     Student.find((err, docs)=>{
         if(!err) { res.send(docs); }
         else { console.log('Error in retreiving student details: ' + JSON.stringify(err, undefined, 2)); }
     })
+});
+
+router.get('/:id', (req, res) =>{
+    if(!isValidObjectId(req.params.id))
+        return res.status(400).send('No record with given id: ${req.params.id}');
 });
 
 router.get('/', (req, res)=>{

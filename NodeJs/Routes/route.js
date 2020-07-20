@@ -1,24 +1,30 @@
 const express = require('express');
 const router = express.Router();
 
-//retrieving tutor contacts
+const Tutor = require('../models/tutors');
+const tutors = require('../models/tutors');
+
+//retrieving tutor contact details
 router.get('/tutors', (req, res, next)=> {
-    res.send('Retrieving the constact list');
+    Tutor.find(function(err, tutors) 
+    {
+        res.json(tutors);
+    });
 });
 
 //adding tutor
 router.post('tutor', (req, res, next)=> {
     //logic to add contact
-    /*await db.collection('Teacher').insertOne({
-        name: 'Thomas',
-        middle_name: '',
-        surname: 'Thomas',
-        title: 'Dr',
-        subject: ['Maths', 'Physics'],
-        phone: 0123456789,
-        email: 'thomasdr@hotmail.com',*/
-
-      });
+    await db.collection('Teacher').insertOne({
+        name: req.body.name,
+        middle_name: req.body.middle_name,
+        surname: req.body.surname,
+        title: req.body.title,
+        subject: req.body.subject,
+        phone: req.body.phone,
+        email: req.body.email,
+        //password: req.body.password;
+    });
 });
 
 //delete tutor

@@ -9,6 +9,8 @@ import { DownloadComponent } from './download/download.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './footer/footer.component';
 import { MainComponent } from './main/main.component';
+import { SubjectsComponent } from './subjects/subjects.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,12 +19,14 @@ import { MainComponent } from './main/main.component';
     PricingComponent,
     DownloadComponent,
     FooterComponent,
-    MainComponent
+    MainComponent,
+    SubjectsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

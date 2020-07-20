@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PlansService } from '../plans.service';
 
 
 @Component({
@@ -8,16 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PricingComponent implements OnInit {
 
-  public plans = [
-    {"name":"Basic" , "price": 1000},
-    {"name":"Premium" , "price": 2000},
-    {"name":"Pro" , "price": 3000},
-    {"name":"Advanced" , "price": 4000}
-  ];
+  plans: Object;
 
-  constructor() { }
+  constructor(private _http: PlansService) { }
 
   ngOnInit(): void {
+    this._http.getSubject().subscribe(data => {
+      this.plans = data
+      console.log(this.plans);
+      }
+    );
   }
 
 }

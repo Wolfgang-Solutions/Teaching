@@ -8,6 +8,11 @@ var path = require('path');
 var app = express();
 
 const route = require('./Routes/route')
+//MongoDB connection
+mongoose.connect('mongodb+srv://derek:trek6000@cluster0.megwb.mongodb.net/Teach?retryWrites=true&w=majority');
+mongoose.connection.on('connected',()=>{
+    console.log('Connected to database mongodb @cloud')
+});
 
 //port no
 const port = 3000;

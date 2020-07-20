@@ -1,0 +1,25 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "Node partr of Teaching  MEAN Stack",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Teaching"
+  },
+  "keywords": [
+    "angularjs",
+    "mean-stack"
+  ],
+  "author": "Derek Hoogewerf <dbhoogewerf@gmail.com>",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.25"
+  }
+}

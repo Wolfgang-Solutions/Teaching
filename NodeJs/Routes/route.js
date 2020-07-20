@@ -9,6 +9,16 @@ router.get('/tutors', (req, res, next)=> {
 //adding tutor
 router.post('tutor', (req, res, next)=> {
     //logic to add contact
+    await db.collection('Teacher').insertOne({
+        name: 'Thomas',
+        middle_name: '',
+        surname: 'Thomas',
+        title: 'Dr',
+        subject: ['Maths', 'Physics'],
+        phone: 0123456789,
+        email: 'thomasdr@hotmail.com',
+
+      });
 });
 
 //delete tutor

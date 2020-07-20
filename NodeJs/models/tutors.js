@@ -12,4 +12,4 @@ const contactSchema = mongoose.Schema({
     bio: { type: String, required: true}
 })
 
-const Contact = module.exports = mongoose.model('Contact', contactSchema);
+const Tutor = module.exports = mongoose.model('Tutor', contactSchema);

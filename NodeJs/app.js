@@ -13,6 +13,9 @@ mongoose.connect('mongodb+srv://derek:trek6000@cluster0.megwb.mongodb.net/Teach?
 mongoose.connection.on('connected',()=>{
     console.log('Connected to database mongodb @cloud')
 });
+mongoose.connection.on('err', ()=>{
+    console.log('Failed to connect. Error:' + err);
+});
 
 //port no
 const port = 3000;

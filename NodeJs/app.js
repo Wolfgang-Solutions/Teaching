@@ -14,6 +14,7 @@ const port = 3000;
 
 //middleware
 app.use(cors());
+
 app.use(bodyParser.json());
 
 //static files

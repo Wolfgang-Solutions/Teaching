@@ -5,8 +5,10 @@
   "scripts": {
     "start": "nodemon app.js",
     "client": "cd .. && npm start --prefix client",
+    "client-test": "cd .. && npm run test --prefix client",
     "server": "nodemon app.js",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "test": "concurrently \"npm run server\" \"npm run client-test\""
   },
   "dependencies": {
     "concurrently": "^5.2.0",

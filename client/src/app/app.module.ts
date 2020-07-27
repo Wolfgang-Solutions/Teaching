@@ -11,7 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { MainComponent } from './main/main.component';
 import { SubjectsComponent } from './subjects/subjects.component';
 import { HttpClientModule } from '@angular/common/http';
-import {NoopAnimationsModule} from '@angular/platform-browser/animations';
+// import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -28,7 +28,7 @@ import {NoopAnimationsModule} from '@angular/platform-browser/animations';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    NoopAnimationsModule
+    // NoopAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

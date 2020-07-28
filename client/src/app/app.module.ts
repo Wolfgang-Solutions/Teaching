@@ -5,6 +5,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 // import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
 
 import { SubjectsComponent } from './subjects/subjects.component';
 import { AppComponent } from './app.component';
@@ -34,6 +35,7 @@ import { PricingComponent } from './pricing/pricing.component';
     BrowserAnimationsModule,
     HttpClientModule,
     FormsModule,
+    MatInputModule,
     // NoopAnimationsModule
   ],
   providers: [],

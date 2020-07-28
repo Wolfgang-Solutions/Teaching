@@ -9,7 +9,7 @@ export class  PostCreateComponent {
     NewPost = '';
 
     onAddPost() {
-        /*    arg: postInput: HTMLTextAreaElement 
+        /*    arg: postInput: HTMLTextAreaElement
         console.log(postInput);
         console.dir(postInput);
         this.NewPost = postInput.value;

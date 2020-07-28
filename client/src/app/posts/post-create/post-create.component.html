@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
-    <mat-form-field>
-        <textarea matInput  rows="6" [(ngModel)]="enteredValue"></textarea>
-    </mat-form-field>
+    <mat-card>
+        <mat-form-field>
+            <textarea matInput  rows="6" [(ngModel)]="enteredValue"></textarea>
+        </mat-form-field>
+    </mat-card>
     <!--name="" id="" cols="30" rows="10" [value]="'No Content'" #postInput-->
     <hr>
     <button (click)="onAddPost()"> Save Post</button>

@@ -7,6 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from "@angular/material/button";
 
 import { SubjectsComponent } from './subjects/subjects.component';
 import { AppComponent } from './app.component';
@@ -37,7 +38,8 @@ import { PricingComponent } from './pricing/pricing.component';
     HttpClientModule,
     FormsModule,
     MatInputModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule
     // NoopAnimationsModule
   ],
   providers: [],

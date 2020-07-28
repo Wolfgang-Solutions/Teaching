@@ -33,6 +33,7 @@ import { PricingComponent } from './pricing/pricing.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    FormsModule,
     // NoopAnimationsModule
   ],
   providers: [],

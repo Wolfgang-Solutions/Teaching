@@ -10,6 +10,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
+// for declaration components
 import { SubjectsComponent } from './subjects/subjects.component';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -19,10 +20,12 @@ import { HeaderComponent } from './header/header.component';
 import { MainComponent } from './main/main.component';
 import { PostCreateComponent } from './posts/post-create/post-create.component';
 import { PricingComponent } from './pricing/pricing.component';
+import { PostListComponent } from './posts/post-list/post-list.component';
 
 
 @NgModule({
   declarations: [
+    PostListComponent,
     PostCreateComponent,
     AppComponent,
     HeaderComponent,

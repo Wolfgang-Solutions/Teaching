@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Content } from '@angular/compiler/src/render3/r3_ast';
 
 @Component({
@@ -9,9 +9,10 @@ import { Content } from '@angular/compiler/src/render3/r3_ast';
 })
 
 export class PostListComponent {
-    posts = [
+    /* posts = [
         { title: 'First Post', content: 'This is the 1st post'},
         {title: 'Second Post', content: 'This is the second post\'s content'},
         {title: 'Third Post', content: 'This is the third post\'s content'}
-    ]
+    ] */
+    @Input() posts = [];
 }

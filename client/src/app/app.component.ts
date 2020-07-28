@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Teaching';
+
+  posts = [];
+  
+  onPostAdded(post){
+    this.posts.push(post);
+  }
+
 }

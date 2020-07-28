@@ -6,8 +6,9 @@ import { Component } from '@angular/core';
     styleUrls: ['./post-create.component.scss']
 })
 export class  PostCreateComponent {
-    enteredValue = '';
-    NewPost = '';
+    enteredTitle = '';
+    enteredContent = '';
+    // NewPost = '';
 
     onAddPost() {
         /*    arg: postInput: HTMLTextAreaElement
@@ -15,6 +16,6 @@ export class  PostCreateComponent {
         console.dir(postInput);
         this.NewPost = postInput.value;
         alert('post added!'); */
-        this.NewPost = this.enteredValue;
+        // this.NewPost = this.enteredValue;
     }
 }

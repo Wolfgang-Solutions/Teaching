@@ -9,8 +9,8 @@ export class  PostCreateComponent {
 
     onAddPost(postInput: HTMLTextAreaElement) {
         // console.log(postInput);
-        console.dir(postInput);
-        this.NewPost = 'The user\'s post';
+        // console.dir(postInput);
+        this.NewPost = postInput.value;
         // alert('post added!');
     }
 }

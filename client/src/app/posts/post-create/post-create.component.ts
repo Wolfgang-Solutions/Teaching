@@ -16,6 +16,11 @@ export class  PostCreateComponent {
         console.dir(postInput);
         this.NewPost = postInput.value;
         alert('post added!'); */
+        const post = {
+            title: this.enteredTitle,
+            content: this.enteredContent
+        };
         // this.NewPost = this.enteredValue;
+
     }
 }

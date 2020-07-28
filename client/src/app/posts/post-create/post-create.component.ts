@@ -8,10 +8,12 @@ export class  PostCreateComponent {
     enteredValue = '';
     NewPost = '';
 
-    onAddPost(postInput: HTMLTextAreaElement) {
-        // console.log(postInput);
-        // console.dir(postInput);
+    onAddPost() {
+        /*    arg: postInput: HTMLTextAreaElement 
+        console.log(postInput);
+        console.dir(postInput);
         this.NewPost = postInput.value;
-        // alert('post added!');
+        alert('post added!'); */
+        this.NewPost = this.enteredValue;
     }
 }

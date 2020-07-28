@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <textarea  rows="6" [(NgModel)]="enteredValue"></textarea>
+    <!--name="" id="" cols="30" rows="10" [value]="'No Content'" #postInput-->
     <hr>
     <button (click)="onAddPost(postInput)"> Save Post</button>
     <p>{{ NewPost }}</p>

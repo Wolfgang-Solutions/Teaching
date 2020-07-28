@@ -13,8 +13,11 @@ import { SubjectsComponent } from './subjects/subjects.component';
 import { HttpClientModule } from '@angular/common/http';
 // import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 
+import { PostCreateComponent } from './posts/post-create/post-create.component';
+
 @NgModule({
   declarations: [
+    PostCreateComponent,
     AppComponent,
     HeaderComponent,
     PricingComponent,

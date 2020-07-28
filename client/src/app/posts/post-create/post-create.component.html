@@ -2,13 +2,12 @@
 <html>
     <mat-card>
         <mat-form-field>
-            <input matInput type="text">
+            <input matInput type="text" [(ngModel)]="enteredTitle">
         </mat-form-field>
         <mat-form-field>
-            <textarea matInput  rows="6" [(ngModel)]="enteredValue"></textarea>
+            <textarea matInput  rows="6" [(ngModel)]="enteredContent"></textarea>
         </mat-form-field>
         <button color="accent" mat-raised-button (click)="onAddPost()">Save Post</button>
-
     </mat-card>
     <!--name="" id="" cols="30" rows="10" [value]="'No Content'" #postInput-->
     <hr>

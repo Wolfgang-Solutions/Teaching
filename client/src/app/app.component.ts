@@ -13,5 +13,4 @@ export class AppComponent {
   onPostAdded(post){
     this.posts.push(post);
   }
-
 }

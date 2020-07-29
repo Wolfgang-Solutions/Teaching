@@ -18,9 +18,6 @@ export class PostListComponent {
         {title: 'Third Post', content: 'This is the third post\'s content'}
     ] */
     @Input() posts: Post[] = [];
-    postsService: PostsService;
 
-    constructor(postsService: PostsService) {
-        this.postsService = postsService;
-    }
+    constructor(public postsService: PostsService) {}
 }

@@ -22,6 +22,7 @@ import { MainComponent } from './main/main.component';
 import { PostCreateComponent } from './posts/post-create/post-create.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { PostListComponent } from './posts/post-list/post-list.component';
+// import { PostsService } from './posts/posts.service'; removed in favour of Injectable
 
 
 @NgModule({

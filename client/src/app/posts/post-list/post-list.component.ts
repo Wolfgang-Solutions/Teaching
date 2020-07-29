@@ -1,8 +1,10 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Content } from '@angular/compiler/src/render3/r3_ast';
 
 import { Post } from '../post.model';
 import { PostsService } from '../posts.service';
+import { throwToolbarMixedModesError } from '@angular/material/toolbar';
+import { Subscription } from 'rxjs';
 
 @Component({
     selector: 'app-post-list',
@@ -11,17 +13,25 @@ import { PostsService } from '../posts.service';
 
 })
 
-export class PostListComponent implements OnInit {
+export class PostListComponent implements OnInit, OnDestroy {
     /* posts = [
         { title: 'First Post', content: 'This is the 1st post'},
         {title: 'Second Post', content: 'This is the second post\'s content'},
         {title: 'Third Post', content: 'This is the third post\'s content'}
     ] */
-    @Input() posts: Post[] = [];
+    posts: Post[] = [];
+    private postsSub: Subscription;
 
     constructor(public postsService: PostsService) {}
 
     ngOnInit() {
         this.posts = this.postsService.getPosts();
+        this.postsSub = this.postsService.getPostUpdateListener().subscribe((posts: Post[]) => {
+            this.posts = posts;
+        });
+    }
+
+    ngOnDestroy() {
+        this.postsSub.unsubscribe();
     }
 }

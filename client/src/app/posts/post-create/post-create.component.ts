@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
-import { Post } from '../post.model';
+// import { Post } from '../post.model';
 import { PostsService } from '../posts.service';
 
 @Component({

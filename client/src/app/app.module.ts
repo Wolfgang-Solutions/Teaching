@@ -1,11 +1,11 @@
-//library imports alphabetical
+// library imports alphabetical
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
-import { MDBBootstrapModule } from 'angular-bootstrap-md'; 
+import { MDBBootstrapModule } from '@angular-bootstrap-md';
 import { NgModule } from '@angular/core';
 
-//custom components alphabetical
+// custom components alphabetical
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DownloadComponent } from './download/download.component';

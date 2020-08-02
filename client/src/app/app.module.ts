@@ -2,8 +2,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
-import { MDBBootstrapModule } from '@angular-bootstrap-md';
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 // custom components alphabetical
 import { AppRoutingModule } from './app-routing.module';
@@ -33,6 +33,9 @@ import { MaterialModule } from './material/material.module';
     HttpClientModule,
     MDBBootstrapModule.forRoot(),
     MaterialModule
+  ],
+  schemas: [
+    NO_ERRORS_SCHEMA
   ],
   providers: [],
   bootstrap: [AppComponent]

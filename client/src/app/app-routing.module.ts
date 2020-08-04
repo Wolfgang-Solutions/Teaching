@@ -7,12 +7,14 @@ import {DownloadComponent} from './download/download.component';
 import {MainComponent} from './mainComponents/main/main.component';
 import {PricingComponent} from './pricing/pricing.component';
 import {SubjectsComponent} from './subjects/subjects.component';
+import { SignupComponent } from './UserReg/signup/signup.component';
 
 
 const routes: Routes = [ 
   { path: 'pricing' , component: PricingComponent },
   { path: 'download' , component: DownloadComponent },
   { path: 'subjects' , component: SubjectsComponent },
+  { path: 'register' , component: SignupComponent },
   { path: '', component: MainComponent}
 ];
 

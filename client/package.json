@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --host 192.168.1.4 --port 4201 --disableHostCheck -o",
+    "start-mob": "ng serve --host 192.168.1.6 --port 4201 --disableHostCheck -o",
+    "start": "ng serve -o",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",

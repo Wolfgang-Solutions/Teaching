@@ -15,6 +15,7 @@ import { MainComponent } from './mainComponents/main/main.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { SubjectsComponent } from './subjects/subjects.component';
 import { MaterialModule } from './material/material.module';
+import { StudentComponent } from './student/student.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { MaterialModule } from './material/material.module';
     DownloadComponent,
     FooterComponent,
     MainComponent,
-    SubjectsComponent
+    SubjectsComponent,
+    StudentComponent
   ],
   imports: [
     BrowserModule,

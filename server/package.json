@@ -5,7 +5,7 @@
   "scripts": {
     "start": "nodemon app.js",
     "client": "cd .. && npm start --prefix client",
-    "client-mob": "cd .. && npm start-mob --prefix client",
+    "client-mob": "cd .. && npm run start-mob --prefix client",
     "client-test": "cd .. && npm run test --prefix client",
     "server": "nodemon app.js",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
